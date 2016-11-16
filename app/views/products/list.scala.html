@@ -1,0 +1,16 @@
+@import play.api.i18n._
+@(products: List[Product])(implicit flash: Flash, messages: Messages)
+
+@main(Messages("application.name")){
+	<dl class="products">
+		@for(product <- products){
+			<dt>@product.name</dt>
+			<dt>@product.description</dt>
+		}
+	</dl>
+	<p>
+		<a href="@controllers.routes.Products.newProduct()" class="btn">
+			<i class="icon-plus"></i> @Messages("products.new.command")
+		</a>
+	</p>
+}

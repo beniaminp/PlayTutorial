@@ -1,0 +1,14 @@
+application.name = Catalog de produse
+
+ean = EAN
+name = Nume
+description = Descriere
+products.details = Produs: {0}
+
+products.form = Detalii produs
+products.new = (nou)
+products.new.command = Nou
+products.new.submit = Adauga
+products.new.success = Adaugat cu succes produsul {0}.
+validation.errors = Va rugam corectati erorile din formular.
+validation.ean.duplicate = Un produs cu acest EAN deja exista
