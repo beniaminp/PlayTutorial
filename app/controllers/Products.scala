@@ -50,7 +50,7 @@ class Products @Inject()(val messagesApi: MessagesApi) extends Controller with I
 			success = {newProduct => 
 				Product.add(newProduct)
 				val message = Messages("products.new.success", newProduct.name)
-				Redirect.routes(routes.Products.show(newProduct.ean)).flashing("success" -> message)
+				Redirect(routes.Products.show(newProduct.ean)).flashing("success" -> message)
 			}
 		)
 	}
